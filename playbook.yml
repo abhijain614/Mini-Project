@@ -1,8 +1,9 @@
 ---
-- name: Pull docker image of Calculator
+- name: Pull docker image of the Calculator
   hosts: all
   tasks:
-    - name: Pull Image
-      docker_image:
-        name: abhijain614/miniproject
-        source: pull
+    - name: pull docker image
+      shell: docker pull abhijain614/miniproject
+
+    - name: running container
+      shell: docker run --name miniproject -it -d abhijain614/miniproject /bin/bash
