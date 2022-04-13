@@ -12,7 +12,7 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        System.out.println("This is a line that I simply added for Webhook trigger testing!");
+        System.out.println("This is a line I simply added for Webhook trigger testing!");
         Calculator calculator = new Calculator();
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
