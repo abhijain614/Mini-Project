@@ -5,5 +5,14 @@
     - name: pull docker image
       shell: docker pull abhijain614/miniproject
 
+    - name: stop previous version docker
+      shell: docker stop miniproject
+      
+    - name: remove stopped container
+      shell: docker rm -f miniproject
+      
+    - name: remove docker images
+      shell: docker image rm -f abhijain614/miniproject:latest
+
     - name: running container
-      shell: docker run --name miniproject -it -d abhijain614/miniproject /bin/bash
+      shell: docker run --name miniproject -it -d abhijain614/miniproject:latest /bin/bash
