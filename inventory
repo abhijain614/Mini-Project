@@ -1,1 +1,1 @@
-192.168.242.162 ansible_ssh_password=password ansible_ssh_user=abhijain614
+172.16.135.85 ansible_ssh_password=password ansible_ssh_user=abhijain614
